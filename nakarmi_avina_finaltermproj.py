@@ -11,10 +11,10 @@ To run the project and generate association rules, follow these steps:
 1. **Clone or Download the Project Files:**  
 First, clone the repository or download the project files to your local machine.  
 Ensure that all necessary scripts and datasets are present in the project folder.  
-`git clone https://github.com/avinanakarmi/CS634_FinalTermProject_ConfusionMatrix.git`
-`cd CS634_MidTermProject_Apriori`
+`git clone https://github.com/avinanakarmi/nakarmi_avina_finaltermproj.git`
+`cd nakarmi_avina_finalproj`
 2. **Install the Required Libraries:**  
-If you haven't installed the libraries listed in the prerequisites section, you can do so by running:  
+Make sure your python version is 3.12 for compatibility with tensorflow. If you haven't installed the libraries listed in the prerequisites section, you can do so by running:  
 `pip install -r requirements.txt`  
 3. **Run the Project:**  
 Open a terminal or command prompt in the project directory and run:  
@@ -38,9 +38,7 @@ import numpy as np
 ## Data Description
 """
 
-red_wine_data = pd.read_csv("./wine+quality/winequality-red.csv", sep=";")
-white_wine_data = pd.read_csv("./wine+quality/winequality-white.csv", sep=";")
-data = pd.concat([red_wine_data, white_wine_data])
+data = pd.read_csv("./nakarmi_avina_finaltermproj.csv", sep=";")
 
 data.describe()
 
